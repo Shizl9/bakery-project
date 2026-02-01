@@ -1,0 +1,475 @@
+/* global style*/
+*{
+     padding: 0;
+     margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+section{
+      padding:90px 0;
+}
+li{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color: #595959;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+.clear-float{
+    clear: both;
+}
+nav{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+nav figure{
+    width: 100px;
+    height: 50px;
+    float: left;
+}
+nav figure img{
+    width: 100%;
+    height: 100%;
+}
+.nav-links{
+    float: right;
+    padding-top: 20px;
+}
+.Home {
+    background-image: url(../images/page1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.Home .layer {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+
+.Home .container {
+    position: relative;
+    z-index: 2;
+}
+
+.Home header {
+    width: 40%;
+    margin: 300px auto;
+    color: rgba(255,255,255,0.92);
+    text-align: center;
+}
+
+.Home header h4 {
+    font-family: "Alegreya Sans";
+    font-size: 22px;
+}
+
+.Home header h1 {
+    font-family: "Alegreya";
+    font-size: 50px;
+}
+
+.Home header p {
+    font-family: "Alegreya Sans";
+    font-size: 24px;
+}
+
+
+.Home .LeranMore-btn,
+.Home .ContactUs-btn {
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 15px 28px;
+    font-weight: bold;
+    margin: 12px 12px 0 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.Home .LeranMore-btn {
+    background-color: #8e7754;
+    color: #fff;
+}
+
+.Home .LeranMore-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.Home .ContactUs-btn {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.Home .ContactUs-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.Home .icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 10px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.Home .icons a:hover {
+    color: #8e7754;
+}
+
+.icons-setting{
+    position: fixed;
+    right: 0;
+    top:40%;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.01);
+
+}
+.icons-setting a{
+    display: block;
+    color: #666;
+    font-size: 20px;
+    margin: 10px 0 ;
+    transition: 0.3s;
+}
+.icons-setting a:hover{
+    color: #0275d8;
+}
+
+.Home .layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0,0, 0.02)
+}
+
+.who{
+    background-color: #fff;
+
+}
+.who figure{
+    width: 45%;
+    height: 100%;
+    float: left;
+}
+figure img{
+    width: 100%;
+    height: 100%;
+}
+
+.who-details{
+    width: 45%;
+    height: 100%;
+    color: #686868;
+    float: right;
+}
+.who-details h3 {
+  font-family: "Alegreya";
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #303030;
+}
+.who-details p {
+  font-family: "Alegreya Sans";
+  font-size: 17px;
+  line-height: 1.8;
+  color: #686868;
+  margin-bottom: 25px;
+}
+.who-details ul{
+  list-style: none;
+  padding: 0;
+}
+.who-details li{
+  font-family: "Alegreya Sans";
+  font-size: 16px;
+  color: #686868;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 33px;
+}
+    
+.location{
+    background-color: #f8f8f8;
+}
+.location figure{
+    width: 45%;
+    height: 100%;
+    float: right;
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+}
+
+.location-details{
+    width: 45%;
+    height: 100%;
+    color: #686868;
+    float: left;
+}
+.location-details h2{
+    font-family: "Alegreya";
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #303030;
+}
+.location-details p {
+  font-family: "Alegreya Sans";
+  font-size: 17px;
+  color: #686868;
+  margin-bottom: 25px;
+}
+.our-baking{
+    background-color: #fff;
+    text-align: center;
+    padding: 60px 40px;
+    font-family: "Alegreya Sans";
+}
+.page4{
+    padding-top: 100px;
+    margin-bottom: 40px;
+}
+
+.our-baking h1{  
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.our-baking p{
+    font-size: 17px;
+    color: #777;
+    margin-bottom: 50px;
+}
+.our-baking img{
+    width: 100%;
+    height: auto;
+}
+.superior-breads,
+.Bagels,
+.cookis{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1%;
+}
+.superior-breads img,
+.Bagels img,
+.cookis img{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.Contact-Information{
+    background-color: #f8f8f8;
+    padding-top: 100px;
+    margin-bottom: 40px;
+}
+
+.contact-left{
+
+    width: 50%;
+    float: left;
+}
+.contact-left h1{
+    font-family: "Alegreya Sans";
+    font-size: 35px;
+    color: #303030;
+    padding: 20px;
+}
+.contact-left p{
+  font-family: "Alegreya Sans";
+  font-size: 17px;
+  color: #686868;
+  margin-bottom: 25px;
+}
+.contact-right{
+    width: 45%;
+    float: right;
+}
+.contact-left ul li{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: #777;
+}
+.contact-left ul li i{
+    margin-left: 10px;
+}
+.footer {
+  background-color: #353330;
+  color: #ccc;
+  font-family: Arial, sans-serif;
+  padding: 60px 0 30px;
+}
+
+.footer-top .container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 60px 0;
+  overflow: hidden; 
+}
+
+.footer-box {
+  float: left;
+  width: 23%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.footer-box h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Alegreya Sans"
+}
+
+.footer-box p,
+.footer-box ul li {
+  font-family: "Alegreya Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #ccc;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #4a4742;
+}
+
+.footer-box ul li:last-child,
+.footer-box p:last-child {
+  border-bottom: none; 
+}
+
+.footer-box ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.footer-box ul li i {
+  margin-right: 8px;
+  color: #8e7754; 
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.clear {
+  clear: both;
+}
+
+.footer-bottom {
+  background-color: #2d2b27;
+  text-align: center;
+  padding: 40px 0 15px;
+  border-top: 1px solid #4a4742;
+  color: #777;
+}
+
+.footer-bottom img {
+  width: 350px;  
+  max-width: 100%;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+
+.footer-bottom p {
+  font-size: 13px;
+  margin: 0;
+}
+
+.footer-social {
+  margin: 15px auto 0;
+  width: auto;
+  text-align: center;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 5px;
+  background-color: #484540; 
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 18px;
+}
+.footer-social a.facebook:hover { background-color: #3b5998; }   
+.footer-social a.google:hover { background-color: #db4437; }    
+.footer-social a.linkedin:hover { background-color: #0077b5; }   
+.footer-social a.twitter:hover { background-color: #1da1f2; }  
+.footer-social a:hover {
+  transition: 0.8s;
+}
+html{
+    scroll-behavior: smooth;
+}
+.scroll{
+    z-index: 9999;
+    right: 10px;
+    bottom: 10px;
+    position: fixed;
+    border-radius: 50px;
+    background-color:#00000099;
+    padding: 12px;
+    color: white;
+    border: 2px solid rgba(255,255,255,0.8);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.scroll:hover{
+    background: color #333;
+    color: #fff;
+    
+}
+@media screen and (max-width:990px) {
+  body {
+    background-color: #000;
+ }
+   
+ .who,.location,.our-baking,.Contact-Information{
+    background-color: #000;
+ }
+ .footer{
+    background-color: #000;
+ }
+ .footer-bottom{
+    background-color: #000;
+ }
+    .nav figure,.nav-links,.who figure,.who-details,.location-details,.location figure,.contact-left,.contact-right,.footer-box{
+    float: none;
+    width: 100%;
+ }
+
+    }
+
